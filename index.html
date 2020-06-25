@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>AlEx</title>
+    <script src="jquery.js" charset="utf-8"></script>
+    <style>
+      * {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+      }
+      button {
+        border-radius: 10%;
+      }
+      button.home.button {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        border-radius: 20% !important;
+      }
+      button.rel.button {
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        background-color: green;
+        border-radius: 20% !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AlternativeExplorer</h1>
+    <div>
+      <button class="home button"><img height="40" src="./home.svg" /></button
+      ><button class="rel button">Reload</button>
+    </div>
+    <table>
+      <tr>
+        <td>Filename</td>
+        <td>Details</td>
+        <td>IsDir</td>
+        <td>Remove</td>
+      </tr>
+      <tr>
+        <td>
+          <button style="background-color: yellow;" class="backpoint">
+            ..
+          </button>
+        </td>
+        <td></td>
+        <td>true</td>
+      </tr>
+    </table>
+    <pre></pre>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
